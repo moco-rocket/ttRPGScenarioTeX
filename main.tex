@@ -1,6 +1,5 @@
 % LuaLaTeX文書; UTF-8
 \documentclass[twocolumn, lualatex, ja=standard]{bxjsarticle}
-% \documentclass[a5paper,twocolumn,twoside, lualatex, ja=standard]{bxjsarticle} //A5版
 \usepackage{luatexja-fontspec}
 \usepackage{ftnright}
 \usepackage{setting}
@@ -10,6 +9,9 @@
 \setmainjfont{HaranoAjiMincho-Regular.otf}[AutoFakeSlant=0.25]
 \setsansjfont{HaranoAjiGothic-Regular.otf}[AutoFakeSlant=0.25]
 
+% 表
+\usepackage{booktabs}
+
 % ダイスロール
 \newcommand{\dice}[1][目星]{〈#1〉}
 
@@ -17,14 +19,14 @@
 \usepackage[unicode=true]{hyperref}
 
 \title{新クトゥルフ神話TRPGシナリオ\\
-ここにタイトルを書きます} 
-\author{moco} 
-\date{} 
+ここにタイトルを書きます}
+\author{moco}
+\date{}
 
 \begin{document}
 
 \maketitle %タイトルを挿入
-\textit{``ニャルラトホテプ……這い寄る混沌……残ったのはもうわたしだけ……この何もない空を聞き手にして、お話ししようと思います。''\\――H.P.ラヴクラフト}
+\textit{``ニャルラトホテプ……這い寄る混沌……残ったのはもうわたしだけ……この何もない空を聞き手にして、お話ししようと思います。''\\――H.P.ラヴクラフト,\ NYARLATHOTEP, 大久保ゆう訳}
 
 \tableofcontents %目次を挿入
 
@@ -37,29 +39,37 @@
 プレイ時間は探索者の作成を含まずに3時間程度だろう．
 
 \subsection{キーパー向け情報}
-昨日、近所の吉野家行ったんです。吉野家。\footnote{ここに脚注を入れる}
+あああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ
 
-そしたらなんか人がめちゃくちゃいっぱいで座れないんです\footnote{ここに脚注を入れる}
-で、よく見たらなんか垂れ幕下がってて、150円引き、とか書いてあるんです。\footnote{ここに脚注を入れる}
-
-もうね、アホかと。馬鹿かと。\footnote{ここに脚注を入れる}
-お前らな、150円引き如きで普段来てない吉野家に来てんじゃねーよ、ボケが。
-150円だよ、150円。
-なんか親子連れとかもいるし。
-一家4人で吉野家か。おめでてーな。
-よーしパパ特盛頼んじゃうぞー、とか言ってるの。もう見てらんない。
-お前らな、150円やるからその席空けろと。はい．
-
-\subsection{主なNPC}
+\subsection{主な機能}
 
 \verb|\|dice[ほにゃらら]と書くことによって自動でヤマカッコ（〈〉）で
-括れるようになっています．こんなふうに．
+括れるようになっています．こんなふうに．\\
 
-「彼を安心させて話を聞き出すには，\dice[動物使い]あるいは\dice[爆破]の技能に成功する必要がある．」
+「彼を安心させて話を聞き出すには，\dice[動物使い]あるいは\dice[爆破]の技能に成功する必要がある．」\\
 
-Texなのでもちろん外部リンクを貼ったり，表を書いたり，\textbf{太字}
+\TeX なのでもちろん\href{https://google.com}{外部リンク}を貼ったり，
+\hypertarget{link1}{記事内にリンクポイント名を付与して}
+\hyperlink{link1}{別の場所から参照}できるようにしたり，
+表を書いたり(表\ref{table:table_1})，
 
-☃っ☃☃☃っ☃っ☃～～♪
+\begin{table}
+    \centering
+    \caption{Microdoft Office Wordと\TeX の比較 \label{table:table_1}}
+        \begin{tabular}{ccccc}
+        \toprule
+                    & \textgt{動作} &\textgt{値段} & \textgt{インターフェース} & \textgt{導入}  \\
+        \midrule
+        Word        & 重い          & 有料         & GUI                     & 簡単            \\
+        \TeX        & 軽い          & 無料         & CUI                     & 面倒            \\
+        \bottomrule
+        \end{tabular}
+\end{table}
+
+脚注を入れたり\footnote{脚注とは本文の下の方につける注記のことである．}，
+文字を\textgt{太字}にしたり、あるいは\textit{斜体}にしたりもできます．\\
+
+何よりも破壊的編集が容易なのがいいよね～！
 
 \section{はじまり：深夜の吉野家}
 % \addcontentsline{toc}{chapter}{はじめに}
@@ -137,6 +147,8 @@ Texなのでもちろん外部リンクを貼ったり，表を書いたり，\t
 一家4人で吉野家か。おめでてーな。
 よーしパパ特盛頼んじゃうぞー、とか言ってるの。もう見てらんない。
 お前らな、150円やるからその席空けろと。はい．
+☃っ☃☃☃っ☃っ☃～～♪
+
 ☃っ☃☃☃っ☃っ☃～～♪
 
 \textit{Italic（日本語非対応）}

@@ -1,5 +1,5 @@
 \contentsline {section}{\numberline {1}シナリオ概要}{1}{section.1}%
 \contentsline {subsection}{\numberline {1.1}はじめに}{1}{subsection.1.1}%
 \contentsline {subsection}{\numberline {1.2}キーパー向け情報}{1}{subsection.1.2}%
-\contentsline {subsection}{\numberline {1.3}主なNPC}{1}{subsection.1.3}%
+\contentsline {subsection}{\numberline {1.3}主な機能}{1}{subsection.1.3}%
 \contentsline {section}{\numberline {2}はじまり：深夜の吉野家}{1}{section.2}%
